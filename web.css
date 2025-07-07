@@ -1,0 +1,208 @@
+    
+       
+         * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: black;
+            color: white;
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 8%
+        }
+
+   
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            height: 50%;
+        }
+
+      
+        
+
+        .nav-left h1 {
+            margin-left: 10px;
+        }
+
+        .nav-right{
+            display: flex;
+            justify-content: end;
+            height: 60%;
+            display: none;
+            
+
+
+
+        }
+
+        .nav-right-alt{
+           display: block; 
+        }
+
+
+
+        .nav-right-alt i {
+            margin-left: 10px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin-left: 20px;
+            font-size: 25px;
+            border-radius: 10px;
+
+        }
+
+        .btn-1 {
+            background-color: black;
+            border: 1px solid white;
+            color: white;
+        }
+
+        .btn-2 {
+            background-color: #4C5FD5;
+            border: 1px solid #4c5fd5;
+            color: white;
+        }
+
+        .input {
+            width: 30%;
+        }
+          .sec1 {
+            height: 60vh;
+            background-color: #dadbf1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+ .content h1 {
+            font-size: 70px;
+            width: 85%;
+            align-items: baseline;
+         font-family: Arial, Helvetica, sans-serif;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        }
+            
+
+            
+            .content p{
+             font-size: 15px;
+            width: 100%;
+            align-items: baseline;   
+            }
+        
+           .content  {
+            width: 100%;
+            font-size: 30px;
+            margin-top: 40px;
+            margin-left: 80px;
+        
+
+        }
+                 .main-section {
+            margin-top: 80px;
+            display: grid;
+            width: 80%;
+            margin-left: 10%;
+            grid-template-columns: 1fr 1fr;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+           .box {
+            /* width: 50%; */
+            display: flex;
+            margin-top: 80px;
+            font-size: 21px;
+        }
+        para h2{
+            margin-bottom: 80px;
+            font-size: 40px;
+        }
+        .para h2, li{
+             margin-bottom: 20px;
+              letter-spacing: 1px;
+            line-height: 30px;
+        }
+        .para a{
+            text-decoration: none;
+            color: #4C5FD5;
+        }
+         
+       
+        
+
+        footer{
+    margin-top: 170px;
+    width: 100%;
+    min-height: 70vh;
+    background-color: black;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px;
+
+
+}
+.foot-item ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.foot-item ul li{
+    margin-top: 10px;
+    list-style: none;
+}
+ .foot-item h2{
+    font-size: 24px;
+    margin-bottom: 20px; 
+ }
+ 
+ .foot-left{
+   
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin-left: 0%;
+    padding-top: 20px;
+ }
+.foot-right{
+    width: 20%;
+    display: flex;
+    align-items: end;
+ }
+       
+
+
+      
+  @media screen and (max-width:680px)
+         {
+            .nav-right{
+                display: none;
+            }
+
+            .nav-right-alt{
+                display: block;
+
+            }
+          
+        }
+      @media screen and (max-width:580px) {
+            .foot-left{
+              display: grid ; 
+              grid-template-columns: 1fr 1fr; 
+            }
+           
+            .main-section{
+                
+                display: grid;
+                grid-template-columns: 1fr;
+            }     
+            }

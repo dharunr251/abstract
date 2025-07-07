@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+         * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: black;
+            color: white;
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 8%
+        }
+
+        .nav-right {
+            display: flex;
+            justify-content: end;
+            height: 50%;
+        }
+
+        .nav-right-alt {
+            display: none;
+   }
+
+        .nav-right-alt i {
+            margin-left: 10px
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            height: 50%;
+        }
+
+      
+        
+
+        .nav-left h1 {
+            margin-left: 10px;
+        }
+
+        .nav-right {
+            display: flex;
+            justify-content: end;
+            height: 60%;
+            
+
+
+
+        }
+
+        .nav-right-alt {
+            display: none;
+        }
+
+
+
+        .nav-right-alt i {
+            margin-left: 10px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin-left: 20px;
+            font-size: 25px;
+            border-radius: 10px;
+
+        }
+
+        .btn-1 {
+            background-color: black;
+            border: 1px solid white;
+            color: white;
+        }
+
+        .btn-2 {
+            background-color: #4C5FD5;
+            border: 1px solid #4c5fd5;
+            color: white;
+        }
+
+        .input {
+            width: 30%;
+        }
+
+        .sec1 {
+            height: 60vh;
+            background-color: #dadbf1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .content h1 {
+            font-size: 70px;
+            width: 100%;
+            align-items: center;
+        }
+
+        .content input {
+            width: 100%;
+            font-size: 30px;
+            margin-top: 40px;
+
+        }
+
+        .box {
+            /* width: 50%; */
+            display: flex;
+            margin-top: 80px;
+            font-size: 21px;
+        }
+
+        .img {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .para {
+            width: 70%;
+        }
+
+        .para h3,
+        p {
+            /*margin-top: 20px;*/
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            line-height: 30px;
+        }
+
+        .para p {
+            font-size: 23px;
+        }
+
+        .para a {
+            text-decoration: none;
+            color: #4C5FD5;
+        }
+
+
+        .main-section {
+            margin-top: 100px;
+            display: grid;
+            width: 80%;
+            margin-left: 10%;
+            grid-template-columns: 1fr 1fr;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+footer{
+    margin-top: 170px;
+    width: 100%;
+    min-height: 70vh;
+    background-color: black;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px;
+
+
+}
+.foot-item ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.foot-item ul li{
+    margin-top: 10px;
+    list-style: none;
+}
+ .foot-item h2{
+    font-size: 24px;
+    margin-bottom: 20px; 
+ }
+ 
+ .foot-left{
+   
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin-left: 0%;
+    padding-top: 20px;
+ }
+.foot-right{
+    width: 20%;
+    display: flex;
+    align-items: end;
+ }
+       
+
+
+        @media screen and (max-width:680px)
+         {
+            .nav-right{
+                display: none;
+            }
+
+            .nav-right-alt{
+                display: block;
+
+            }
+            .foot-left{
+              display: grid ; 
+              grid-template-columns: 1fr 1fr; 
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="" alt="">
+            <h1>Abstract |</h1>
+            <h1>Help Center</h1>
+        </div>
+        <div class="nav-right">
+            <input type="text" placeholder="search" class="btn input">
+            <button class="btn btn-1">Submit a Request</button>
+            <button class="btn btn-2">Sign in</button>
+        </div>
+        <div class="nav-right-alt">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff; font-size: 25px;"></i>
+            <i class="fa-solid fa-bars" style="color: #ffffff; font-size:25px"></i>
+        </div>
+    </nav>
+    <header>
+        <div class="sec1">
+            <div class="content">
+                <h1>How can we help?</h1>
+                <input type="text" placeholder="search">
+
+
+            </div>
+        </div>
+    </header>
+
+
+    <section class="main-section">
+        <div class="box">
+            <div class="img">
+                <img src="https://help.goabstract.com/hc/theming_assets/01HZH4D4GACXWCRKK6JHQ730XD" alt="" width="60%"
+                    height="60%">
+            </div>
+            <div class="para">
+                <h3>
+                    Using Abstract</h3>
+                <p>Abstract lets you manage, version, and document your designs in one place.</p>
+                <a href="./web1.html">Learn More →</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="img">
+                <img src="https://help.goabstract.com/hc/theming_assets/01HZH4D45NKFCN3388ZCBJB878" alt="" width="60%"
+                    height="60%">
+            </div>
+            <div class="para">
+                <h3>
+
+                    Manage your account</h3>
+                <p>Configure your account settings, such as your email, profile details, and password.</p>
+                <a href="./web2.html">Learn More →</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img src="https://help.goabstract.com/hc/theming_assets/01HZH4D3M8CRR0C2V5GREVR6HK" alt="" width="60%"
+                    height="60%">
+            </div>
+            <div class="para">
+                <h3>
+                    Manage organizations, teams, and projects</h3>
+                <p>Use Abstract organizations, teams, and projects to organize your people and your work.</p>
+                <a href="./web3.html">Learn More →</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img src="https://help.goabstract.com/hc/theming_assets/01HZH4D38K1S1M9WKWSQZE62YE" alt="" width="60%"
+                    height="60%">
+            </div>
+            <div class="para">
+                <h3>
+
+                    Manage billing </h3>
+                <p>Change subscriptions and payment details.</p>
+                <a href="./web4.html">Learn More →</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img src="https://help.goabstract.com/hc/theming_assets/01HZH4D3S3QY5190TZE3H8ZSVK" alt="" width="60%"
+                    height="60%">
+            </div>
+            <div class="para">
+                <h3>
+                    Authenticate to Abstract </h3>
+                <p>Set up and configure SSO, SCIM, and Just-in-Time provisioning.
+                </p>
+                <a href="./web5.html">Learn More →</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img src="https://help.goabstract.com/hc/theming_assets/01HZH4D3G4S2K93BN3WJPT8600" alt="" width="60%"
+                    height="60%">
+            </div>
+            <div class="para">
+                <h3>
+                    Abstract support </h3>
+                <p>Get in touch with a human.</p>
+                <a href="./web6.html">Learn More →</a>
+            </div>
+        </div>
+    </section>
+    
+            <footer>
+        <div class="foot-left">
+            <div class="foot-item">
+                <h2>Abstract</h2>
+                <ul>
+                    <li ><a href="">Start Trial</a></li>
+                <li> <a href="">Pricing</a></li>
+                <li><a href="">Download</a></li>
+            </ul></div>
+    
+            <div class="foot-item">
+                <h2>Resources</h2>
+                <ul>
+                    <li ><a href="">Blog</a></li>
+                <li> <a href="">Help Center</a></li>
+                <li><a href="">Release Notes</a></li>
+            <li><a href="">Status</a></li> </ul></div>
+                
+            <div class="foot-item">
+                <h2>Community</h2>
+                <ul>
+                    <li ><a href="">Twitter</a></li>
+                <li> <a href="">LinkedIn</a></li>
+                <li><a href="">Facebook</a></li>
+            <li><a href="">Dribblle</a></li> 
+        <li><a href="">Podcast</a></li> </ul></div>
+           
+            <div class="foot-item">
+                <h2>Company</h2>
+                <ul>
+                    <li ><a href="">About Us</a></li>
+                <li> <a href="">Careers</a></li>
+                <li><a href="">Legal</a></li></ul>
+                <h3 style="margin-top: 20px; "> Contacts Us</h3> 
+                <ul><li><a href="">info@goabstract.com</a></li>
+                </ul>
+
+     </div>
+     </div>
+     <div class="foot-right">
+          <h3 style="font-size: 22px;">
+                © Copyright 2025
+
+                Abstract Studio Design, Inc.
+
+                All rights reserved</h3>
+
+     </div>
+            
+    </footer>
+
+
+</body>
+
+</html>
