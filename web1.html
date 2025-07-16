@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
-       
-         * {
+        * {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
@@ -26,7 +26,7 @@
             padding: 0px 8%
         }
 
-   
+
 
         .nav-left {
             display: flex;
@@ -34,26 +34,19 @@
             height: 50%;
         }
 
-      
-        
+
+
 
         .nav-left h1 {
             margin-left: 10px;
         }
 
-        .nav-right{
+        .nav-right {
             display: flex;
             justify-content: end;
-            height: 60%;
+            height: 60%; }
+  .nav-right-alt {
             display: none;
-            
-
-
-
-        }
-
-        .nav-right-alt{
-           display: block; 
         }
 
 
@@ -68,9 +61,7 @@
             font-size: 25px;
             border-radius: 10px;
 
-        }
-
-        .btn-1 {
+        }   .btn-1 {
             background-color: black;
             border: 1px solid white;
             color: white;
@@ -85,7 +76,10 @@
         .input {
             width: 30%;
         }
-          .sec1 {
+        
+
+        .sec1 {
+        width: 100%;
             height: 60vh;
             background-color: #dadbf1;
             display: flex;
@@ -93,117 +87,192 @@
             align-items: center;
 
         }
- .content h1 {
+
+        .content h1 {
             font-size: 70px;
+            width: 85%;
+            align-items: baseline;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+
+
+        .content p {
+            font-size: 15px;
             width: 100%;
             align-items: baseline;
-         font-family:  Arial, Helvetica, sans-serif;
-        margin-top: 20px;
-        margin-bottom: 15px;
         }
-            
 
-            
-            .content p{
-             font-size: 15px;
-            width: 100%;
-            align-items: baseline;   
-            }
-        
-           .content  {
-            width: 100%;
+        .content {
+            width: 90%;
             font-size: 30px;
             margin-top: 40px;
             margin-left: 80px;
-        
+
 
         }
-        
-             .main-section {
+
+        .main-section {
             margin-top: 80px;
             display: grid;
             width: 80%;
-            margin-left: 10%;
+            margin-left: 5%;
             grid-template-columns: 1fr 1fr;
             font-family: Arial, Helvetica, sans-serif;
         }
-           .box {
-            /* width: 50%; */
-            display: flex;
+
+        .box {
+            /* width:50%; */
+            display: grid;
             margin-top: 80px;
             font-size: 21px;
         }
-        para h2{
+
+        .para h2 {
             margin-bottom: 80px;
             font-size: 40px;
         }
-        .para h2, li{
-             margin-bottom: 20px;
-              letter-spacing: 1px;
+
+        .para h2,
+        li {
+            margin-bottom: 20px;
+            letter-spacing: 1px;
             line-height: 30px;
         }
-        .para a{
+
+        .para a {
             text-decoration: none;
             color: #4C5FD5;
         }
+
         footer{
-    margin-top: 170px;
-    width: 100%;
-    min-height: 70vh;
-    background-color: black;
-    color: #ffffff;
-    display: flex;
-    justify-content: space-around;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 50px;
+            margin-top: 170px;
+            width: 100%;
+            min-height: 70vh;
+            background-color: black;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-around;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 90px;
+          padding-top: 20px;
+         padding-left: 20px;
+         
+        
 
 
-}
-.foot-item ul li a {
-    text-decoration: none;
-    color: #ffffff;
-}
-.foot-item ul li{
-    margin-top: 10px;
-    list-style: none;
-}
- .foot-item h2{
-    font-size: 24px;
-    margin-bottom: 20px; 
- }
- 
- .foot-left{
-   
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
-    margin-left: 0%;
-    padding-top: 20px;
- }
-.foot-right{
-    width: 20%;
-    display: flex;
-    align-items: end;
- }
-       
+        }
+
+        .foot-item ul li a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .foot-item ul li {
+            margin-top: 10px;
+            list-style: none;
+            line-height: 5px;
+        }
+
+        .foot-item h2 {
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+
+        .foot-left {
+
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+            margin-left: 0%;
+            padding-top: 20px;
+            
+        }
+
+        .foot-right {
+            width: 20%;
+            display: flex;
+            align-items: end;
+        }
+
+        .foo-right {
+            width: 100%;
+            display: none;
+            height: 20vh;
+            background-color: black;
+            color: #ffffff;
+        }
 
 
-      
-  @media screen and (max-width:680px)
-         {
-            .nav-right{
+
+
+        @media screen and (max-width:680px) {
+            .nav-right {
                 display: none;
             }
 
-            .nav-right-alt{
+            .nav-right-alt {
                 display: block;
 
             }
         }
+
+        @media screen and (max-width:580px) {
+            .main-section {
+                display: grid;
+                grid-template-columns: 1fr;
+                width: 95%;
+                padding-left: 5%;
+
+            }
+
+            .box {
+                width: 100%;
+
+            }
+
+              .foot-left{
+                width: 100%;
+              display: grid ; 
+              justify-content: space-around;
+              grid-template-columns: 1fr 1fr;
+                 
+            }
+            
+             .footer{
+                display: grid;
+                grid-template-rows: 1fr;
+                width: 90%;
+                margin-left: 5%;
+                
+             }
+                .foot-right{
+                display: none;
+                grid-template-columns: 1fr;
+               
+               }
+                .foo-right{
+                display: block;
+                justify-items: baseline;
+                width: 100%;
+                padding-top: 10px;
+                padding-left: 5%;
+                padding-right: 60%;
+            }
+
+            .content h1 {
+                font-size: 35px;
+                width: 100%;
+            }
+
+        }
     </style>
 </head>
+
 <body>
-     <nav>
+    <nav>
         <div class="nav-left">
             <img src="" alt="">
             <h1>Abstract |</h1>
@@ -219,207 +288,228 @@
             <i class="fa-solid fa-bars" style="color: #ffffff; font-size:25px"></i>
         </div>
     </nav>
-   <header>
-    <div class="sec1">
-<div class="content">
-    <p style="font-size: 20px;">Abstract > Using Abstract</p>
-        <h1>Using Abstract</h1>
-        <p style="font-size: 30px;">Abstract lets you manage, version, and document your designs in one place.</p>
-</div>
+    <header>
+        <div class="sec1">
+            <div class="content">
+                <p style="font-size: 20px;">Abstract > Using Abstract</p>
+                <h1>Using Abstract</h1>
+                <p style="font-size: 30px;">Abstract lets you manage, version, and document your designs in one place.
+                </p>
+            </div>
 
 
-    </div>
-   </header>
-<section>
-    <div class="main-section">
-<div class="box">
-<div class="para">
-<h2 style="font-size: 40px;">Get started in Abstract</h2>
-<ui>
-    <li>Try out Abstract</li>
-    <li>The Abstract Design Workflow</li>
-    <li>Start Working In Abstract</li>
-    <li>Practice Abstract workflow</li>
-    <li>Glossary</li>
-    </ui>
-  
-</div>
-</div>
-<div class="box">
-<div class="para">
-<h2 style="font-size: 40px;">Using the Abstract Desktop App</h2>
-<ui>
-    <li>Update to the newest version of Abstract</li>
-    <li>Backing Up your Work in Abstract</li>
-    <li>System requirements</li>
-    <li>Downloading the Abstract Desktop Application</li>  
-    <li>The Abstract plugin</li>
-    <li>Keyboard shortcuts</li>
-    </ui>
-    <a href="">See all 13 articles</a>
-</div>
-</div>
-<div class="box">
-<div class="para">
-<h2 style="font-size: 40px;">Working in Projects</h2>
-<ui>
-    <li>Name your project</li>
-    <li>Add files to your project</li>
-    <li>Create a branch</li>
-    <li>Open untracked vs. creating a branch</li>
-    <li>Change branch status</li>
-    <li>Rename a branch</li>
-    </ui>
-      <a href="">See all 10 articles</a>
-</div>
-</div>
-<div class="box">
-<div class="para">
-<h2 style="font-size: 40px;">Commit your work</h2>
-<ui>
-    <li>A guide to commits</li>
-    <li>Committing changes in a branch</li>
-    <li>Commit history</li>
-    <li>Troubleshoot your commits</li>
-    
-    </ui>
-</div>
-</div>
-<div class="box">
-<div class="para">
-<h2 style="font-size: 40px;">Merge your work</h2>
-<ui>
-    <li>A Guide to Merging</li>
-    <li>Merging to the main branch</li>
-    <li>Resolve conflicts</li>
-    <li>Restore to previous commit</li>
-    <li>Merge restrictions</li>
-    </ui>
-</div>
-</div>
-<div class="box">
-<div class="para">
-<h2 style="font-size: 40px;">Work with libraries</h2>
-<ui>
-    <li>Libraries Overview</li>
-    <li>Add a Library</li>
-    <li>Link a library</li>
-    <li>Update a library</li>
-    <li>Work with dependencies</li>
-    <li>Manage your libraries</li>
-    </ui>
-</div>
-</div>
-<div class="box">
-<div class="para">
-<h2 style="font-size: 40px;">Collaborate in projects</h2>
-<ui>
-    <li>Share your designs</li>
-    <li>Request a design review</li>
-    <li>Use collections</li>
-    <li>Sections within collections</li>
-    <li>Leave comments and annotations</li>
-    <li>Assets</li>
-    </ui>
-    <a href="">See all 8 articles</a>
-</div>
-</div>
-<div class="box">
-<div class="para">
-<h2 style="font-size: 40px;">Troubleshooting Abstract</h2>
-<ui>
-    <li>General Troubleshooting</li>
-    <li>Troubleshoot sync errors</li>
-    <li>Resolve a pending commit</li>
-    <li>Resolve diverged branches</li>
-    <li>Previews and asset generation</li>
-    <li>Sync library components in Sketch</li>
-    </ui>
-    <a href="">See all 11 articles</a>
-</div>
-</div>
-<div class="box">
-<div class="para">
-<h2 style="font-size: 40px;margin-bottom: 40px;">Abstract Best Practices</h2>
-<h4 style="font-size: 25px;">Main</h4>
-<ui>
-    <li>Define the main branch</li>
-    </ui>
-    <h4 style="font-size: 25px;">Branching</h4>
-    <ui>
-        <li>Set up a new branch</li>
-        <li>Working in a branch</li>
-        <li>Prepare your branch for merging</li>
-    </ui>
-    <h4 style="font-size: 25px;">Committing</h4>
-    <ui>
-        <li>When to commit</li>
-        <li>Committing — Part 2</li></ui>
-         <h4 style="font-size: 25px;">Merging</h4>
-    <ui>
-        <li>Update from the main branch before merging</li>
-        <li>Resolve merge conflicts</li>
-        <li>Clean up your branch before merging</li>
-    </ui>
-    <h4 style="font-size: 25px;">Design systems</h4>
-    <ui>
-        <li>Libraries</li>
-        </ui>   
-</div>
-</div>
+        </div>
+    </header>
+    <section>
+        <div class="main-section">
+            <div class="box">
+                <div class="para">
+                    <h2 style="font-size: 35px;">Get started in Abstract</h2>
+                    <ui>
+                        <li>Try out Abstract</li>
+                        <li>The Abstract Design Workflow</li>
+                        <li>Start Working In Abstract</li>
+                        <li>Practice Abstract workflow</li>
+                        <li>Glossary</li>
+                    </ui>
 
-    </div>
-</section>
-           <footer>
+                </div>
+            </div>
+            <div class="box">
+                <div class="para">
+                    <h2 style="font-size: 35px;">Using the Abstract Desktop App</h2>
+                    <ui>
+                        <li>Update to the newest version of Abstract</li>
+                        <li>Backing Up your Work in Abstract</li>
+                        <li>System requirements</li>
+                        <li>Downloading the Abstract Desktop Application</li>
+                        <li>The Abstract plugin</li>
+                        <li>Keyboard shortcuts</li>
+                    </ui>
+                    <a href="">See all 13 articles</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="para">
+                    <h2 style="font-size: 35px;">Working in Projects</h2>
+                    <ui>
+                        <li>Name your project</li>
+                        <li>Add files to your project</li>
+                        <li>Create a branch</li>
+                        <li>Open untracked vs. creating a branch</li>
+                        <li>Change branch status</li>
+                        <li>Rename a branch</li>
+                    </ui>
+                    <a href="">See all 10 articles</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="para">
+                    <h2 style="font-size: 35px;">Commit your work</h2>
+                    <ui>
+                        <li>A guide to commits</li>
+                        <li>Committing changes in a branch</li>
+                        <li>Commit history</li>
+                        <li>Troubleshoot your commits</li>
+
+                    </ui>
+                </div>
+            </div>
+            <div class="box">
+                <div class="para">
+                    <h2 style="font-size: 35px;">Merge your work</h2>
+                    <ui>
+                        <li>A Guide to Merging</li>
+                        <li>Merging to the main branch</li>
+                        <li>Resolve conflicts</li>
+                        <li>Restore to previous commit</li>
+                        <li>Merge restrictions</li>
+                    </ui>
+                </div>
+            </div>
+            <div class="box">
+                <div class="para">
+                    <h2 style="font-size: 35px;">Work with libraries</h2>
+                    <ui>
+                        <li>Libraries Overview</li>
+                        <li>Add a Library</li>
+                        <li>Link a library</li>
+                        <li>Update a library</li>
+                        <li>Work with dependencies</li>
+                        <li>Manage your libraries</li>
+                    </ui>
+                </div>
+            </div>
+            <div class="box">
+                <div class="para">
+                    <h2 style="font-size: 35px;">Collaborate in projects</h2>
+                    <ui>
+                        <li>Share your designs</li>
+                        <li>Request a design review</li>
+                        <li>Use collections</li>
+                        <li>Sections within collections</li>
+                        <li>Leave comments and annotations</li>
+                        <li>Assets</li>
+                    </ui>
+                    <a href="">See all 8 articles</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="para">
+                    <h2 style="font-size: 35px;">Troubleshooting Abstract</h2>
+                    <ui>
+                        <li>General Troubleshooting</li>
+                        <li>Troubleshoot sync errors</li>
+                        <li>Resolve a pending commit</li>
+                        <li>Resolve diverged branches</li>
+                        <li>Previews and asset generation</li>
+                        <li>Sync library components in Sketch</li>
+                    </ui>
+                    <a href="">See all 11 articles</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="para">
+                    <h2 style="font-size: 35px;margin-bottom: 40px;">Abstract Best Practices</h2>
+                    <h4 style="font-size: 25px;">Main</h4>
+                    <ui>
+                        <li>Define the main branch</li>
+                    </ui>
+                    <h4 style="font-size: 25px;">Branching</h4>
+                    <ui>
+                        <li>Set up a new branch</li>
+                        <li>Working in a branch</li>
+                        <li>Prepare your branch for merging</li>
+                    </ui>
+                    <h4 style="font-size: 25px;">Committing</h4>
+                    <ui>
+                        <li>When to commit</li>
+                        <li>Committing — Part 2</li>
+                    </ui>
+                    <h4 style="font-size: 25px;">Merging</h4>
+                    <ui>
+                        <li>Update from the main branch before merging</li>
+                        <li>Resolve merge conflicts</li>
+                        <li>Clean up your branch before merging</li>
+                    </ui>
+                    <h4 style="font-size: 25px;">Design systems</h4>
+                    <ui>
+                        <li>Libraries</li>
+                    </ui>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
         <div class="foot-left">
             <div class="foot-item">
                 <h2>Abstract</h2>
                 <ul>
-                    <li ><a href="">Start Trial</a></li>
-                <li> <a href="">Pricing</a></li>
-                <li><a href="">Download</a></li>
-            </ul></div>
-    
+                    <li><a href="">Start Trial</a></li>
+                    <li> <a href="">Pricing</a></li>
+                    <li><a href="">Download</a></li>
+                </ul>
+            </div>
+
             <div class="foot-item">
                 <h2>Resources</h2>
                 <ul>
-                    <li ><a href="">Blog</a></li>
-                <li> <a href="">Help Center</a></li>
-                <li><a href="">Release Notes</a></li>
-            <li><a href="">Status</a></li> </ul></div>
-                
+                    <li><a href="">Blog</a></li>
+                    <li> <a href="">Help Center</a></li>
+                    <li><a href="">Release Notes</a></li>
+                    <li><a href="">Status</a></li>
+                </ul>
+            </div>
+
             <div class="foot-item">
                 <h2>Community</h2>
                 <ul>
-                    <li ><a href="">Twitter</a></li>
-                <li> <a href="">LinkedIn</a></li>
-                <li><a href="">Facebook</a></li>
-            <li><a href="">Dribblle</a></li> 
-        <li><a href="">Podcast</a></li> </ul></div>
-           
+                    <li><a href="">Twitter</a></li>
+                    <li> <a href="">LinkedIn</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Dribblle</a></li>
+                    <li><a href="">Podcast</a></li>
+                </ul>
+            </div>
+
             <div class="foot-item">
                 <h2>Company</h2>
                 <ul>
-                    <li ><a href="">About Us</a></li>
-                <li> <a href="">Careers</a></li>
-                <li><a href="">Legal</a></li></ul>
-                <h3 style="margin-top: 20px; "> Contacts Us</h3> 
-                <ul><li><a href="">info@goabstract.com</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li> <a href="">Careers</a></li>
+                    <li><a href="">Legal</a></li>
+                </ul>
+                <h3 style="margin-top: 20px; "> Contacts Us</h3>
+                <ul>
+                    <li><a href="">info@goabstract.com</a></li>
                 </ul>
 
-     </div>
-     </div>
-     <div class="foot-right">
-          <h3 style="font-size: 22px;">
+            </div>
+        </div>
+        <div class="foot-right">
+            <h3 style="font-size: 22px;">
                 © Copyright 2025
 
                 Abstract Studio Design, Inc.
 
                 All rights reserved</h3>
 
-     </div>
-            
+        </div>
+
     </footer>
-    
+    <div class="foo-right">
+        <h3 style="font-size: 22px;">
+            © Copyright 2025
+
+            Abstract Studio Design, Inc.
+
+            All rights reserved</h3>
+
+    </div>
+
+
+
 </body>
-</html> 
+
+</html>

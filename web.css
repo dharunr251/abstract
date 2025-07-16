@@ -35,7 +35,7 @@
             display: flex;
             justify-content: end;
             height: 60%;
-            display: none;
+            
             
 
 
@@ -43,7 +43,7 @@
         }
 
         .nav-right-alt{
-           display: block; 
+           display: none; 
         }
 
 
@@ -83,7 +83,7 @@
             align-items: center;
 
         }
- .content h1 {
+        .content h1 {
             font-size: 70px;
             width: 85%;
             align-items: baseline;
@@ -122,7 +122,7 @@
             margin-top: 80px;
             font-size: 21px;
         }
-        para h2{
+        .para h2{
             margin-bottom: 80px;
             font-size: 40px;
         }
@@ -149,6 +149,8 @@
     justify-content: space-around;
     font-family: Arial, Helvetica, sans-serif;
     padding: 50px;
+    padding-top: 20px;
+    padding-left: 20px;
 
 
 }
@@ -159,6 +161,7 @@
 .foot-item ul li{
     margin-top: 10px;
     list-style: none;
+    line-height: 5px;
 }
  .foot-item h2{
     font-size: 24px;
@@ -178,7 +181,12 @@
     display: flex;
     align-items: end;
  }
-       
+  .foo-right{
+    display: none;
+    height: 20vh;
+    background-color: black;
+    color: #ffffff;
+}     
 
 
       
@@ -195,11 +203,39 @@
           
         }
       @media screen and (max-width:580px) {
-            .foot-left{
-              display: grid ; 
-              grid-template-columns: 1fr 1fr; 
+          
+           .content h1 {
+                font-size: 35px;
+                width: 100%;
             }
-           
+              .foot-left{
+                width: 100%;
+              display: grid ; 
+              justify-content: space-around;
+              grid-template-columns: 1fr 1fr;
+                 
+            }
+            
+             .footer{
+                display: grid;
+                grid-template-rows: 1fr;
+                width: 90%;
+                margin-left: 5%;
+                
+             }
+                .foot-right{
+                display: none;
+                grid-template-columns: 1fr;
+               
+               }
+                .foo-right{
+                display: block;
+                justify-items: baseline;
+                width: 100%;
+                padding-top: 10px;
+                padding-left: 5%;
+                padding-right: 60%;
+            }
             .main-section{
                 
                 display: grid;

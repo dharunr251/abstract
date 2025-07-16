@@ -8,67 +8,319 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./web.css">
-<style>
-.main{
-    width: 100%;
-    height: 20vh;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 80px;
-}
-.main-left{
-    width:50% ;
-    display: flex;
-    color: black;
-    background-color: #FFE496;
-    align-items: center;
-    margin-left: 6%;
-    padding-left: 30px;
-}
-.main-right{
-    position: fixed;
-    top: 10px;
-    right: 100px;
-    width: 50%;
-    display: grid;
-    align-items: center;
-    justify-content: end;
-    margin-right: 30px;
+    <!-- <link rel="stylesheet" href="./web.css"> -->
+    <style>
+               * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
 
+        nav {
+            background-color: black;
+            color: white;
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 8%
+        }
+
+
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            height: 50%;
+        }
+
+
+
+
+        .nav-left h1 {
+            margin-left: 10px;
+        }
+
+        .nav-right {
+            display: flex;
+            justify-content: end;
+            height: 60%;}
+            .nav-right-alt {
+            display: none;
+        }
+
+
+
+        .nav-right-alt i {
+            margin-left: 10px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin-left: 20px;
+            font-size: 25px;
+            border-radius: 10px;}
+
+
+      .btn-1 {
+            background-color: black;
+            border: 1px solid white;
+            color: white;
+        }
+
+        .btn-2 {
+            background-color: #4C5FD5;
+            border: 1px solid #4c5fd5;
+            color: white;
+        }
+
+        .input {
+            width: 30%;
+        }
+       .sec1 {
+            height: 60vh;
+            background-color: #dadbf1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .content h1 {
+            font-size: 70px;
+            width: 85%;
+            align-items: baseline;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+
+
+        .content p {
+            font-size: 15px;
+            width: 100%;
+            align-items: baseline;
+        }
+
+        .content {
+            width: 100%;
+            font-size: 30px;
+            margin-top: 40px;
+            margin-left: 80px;
+
+
+        }
+
+
+        
+        .main {
+            width: 100%;
+            height: 280vh;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 80px;
+        }
+
+
+        .main-left {
+            width: 55%;
+        
+            padding: 20px;
+            margin-left: 7%;
+            
+
+        }
+        .main-right {
+            width: 35%;
+            padding: 20px;
+            margin-bottom: 100px;
+            margin-right: 7%;
+            
+        }
+        .contact2 {
+            padding: 20px;
+            border-radius: 10px;
+
+            font-size: 23px;
+        }
+        
+        .col {
+            width: 100%;
+            /* height: 100%; */
+            background-color: #FFE496;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        .col1 {
+            font-size: 22px;
+            margin-top: 30px;
+        }
+
+        .contact {
+            margin-top: 30px;
+        }
+
+        .contact h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            font-size: 22px;
+            margin-bottom: 10px;
+            line-height: 30px;
+            margin-left: 40px;
+        }
+
+        .contact .ui li {
+            font-size: 30px;
+            padding-left: 30px;
+            margin-left: 40px;
+        }
+
+        .contact1 {
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        .contact1 h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .contact1 p {
+            font-size: 22px;
+            margin-bottom: 10px;
+            line-height: 30px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        footer{
+            margin-top: 170px;
+            width: 100%;
+            min-height: 80vh;
+            background-color: black;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-around;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 90px;
+          padding-top: 20px;
+         padding-left: 20px;
+         
+        
+
+
+        }
+
+        .foot-item ul li a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .foot-item ul li {
+            margin-top: 10px;
+            list-style: none;
+            
+        }
+
+        .foot-item h2 {
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+
+        .foot-left {
+
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+            margin-left: 0%;
+            padding-top: 20px;
+            
+        }
+
+        .foot-right {
+            width: 20%;
+            display: flex;
+            align-items: end;
+        }
+
+        .foo-right {
+            width: 100%;
+            display: none;
+            height: 20vh;
+            background-color: black;
+            color: #ffffff;
+        }
+
+           @media screen and (max-width:580px)
+         {
+            .nav-right{
+                display: none;
+            }
+
+            .nav-right-alt{
+                display: block;
+
+            }
+.main-right{
+    display: none;
 }
-.main-right h5{
-    font-size: 23px;
-    background-color: #4C5FD5;
-    color:white;
-    padding: 2px 5px;
-}
-.main-right a{
-    font-size:23px ;
-    text-decoration: none;
-    color: black;
-    align-items: center;
-}
-.main-content{
-    width: 100%;
-    height: 10vh;
-    display: grid;
-    justify-content: space-between;
-}
-.main-content .content1{
-    font-size: 24px;
-    margin-top: 40px;
-    margin-left: 80px;
-}
-.main-content .content2 h1{
- font-size: 40px;
- margin-top: 40px;
- margin-left: 80px;
-}
-.main-content .content2 ol  li{
-    font-size: 20px;
-}
-</style>
+.main-left {
+            width: 100%;
+            padding: 20px;
+            margin-left: 0%;
+            margin-right: 0%;
+        } 
+               .foot-left{
+                width: 100%;
+              display: grid ; 
+              justify-content: space-around;
+              grid-template-columns: 1fr 1fr;
+                 
+            }
+            
+             .footer{
+                
+                display: grid;
+                grid-template-rows: 1fr;
+                width: 90%;
+                margin-left: 5%;
+                
+             }
+                .foot-right{
+                display: none;
+                grid-template-columns: 1fr;
+            }
+                  .foo-right{
+                display: block;
+                justify-items: center;
+                width: 100%;
+                padding-top: 10px;
+                padding-left: 5%;
+                padding-right: 60%;
+            }
+                 
+             .main-section{
+                display: grid;
+                grid-template-columns: 1fr;
+             } 
+             .sec1{
+                height: 50vh;}
+            
+            .content h1{
+                font-size: 40px;
+                text-align: center;
+            }
+            .main{
+                height: 390vh;
+            }
+    }
+    </style>
 </head>
 
 <body>
@@ -87,6 +339,7 @@
             <i class="fa-solid fa-magnifying-glass" style="color: #ffffff; font-size: 25px;"></i>
             <i class="fa-solid fa-bars" style="color: #ffffff; font-size:25px"></i>
         </div>
+        
     </nav>
     <header>
         <div class="sec1">
@@ -99,43 +352,138 @@
     </header>
     <section>
         <div class="main">
-       
-       <div class="main-left"><p style="font-size: 23px;">Support hours are Monday-Friday 05:00-18:00 Pacific Time. We observe all U.S.
-            holidays.</p>
-            
+            <div class="main-left">
+                <div class="col">
+                    <p style="font-size: 23px;background-color:#FFE496 ;">Support hours are Monday-Friday 05:00-18:00
+                        Pacific Time. We observe all U.S. holidays.</p>
+                </div>
+                <div class="col1">
+                    <p>Unable to sign in? Reach us here.</p>
+                </div>
+                <div class="contact">
+                    <h1>Contact Support</h1>
+                    <p> 1.While signed in to Abstract, select the Support icon.</p>
+                    <ui>
+                        <li style="margin-left: 70px;font-size: 20px;">If you're in the Abstract web app, the Support
+                            icon is in the lower left corner.</li>
+                        <li style="margin-left:70px ;font-size: 20px;">If you're in the Abstract Desktop app, the
+                            Supporticon is in the upper right corner.</li>
+                    </ui>
+                    <p>2.Select<span style="font-size: 25px; color: black;"> Contact Support</span>. </p>
+                    <p>3.On the Contact Support page, choose the<span style="font-size: 25px; color: black;">
+                            Topic</span> you want to contact Support about, write a
+                        <span style="font-size: 25px; color: black;">Subject</span> for your message, and enter a<span
+                            style="font-size: 25px; color: black;"> Description</span> of your issue.
+                    </p>
+                    <p>4.If you have files you want to give Support, such as bug reports or screenshots, click <span
+                            style="font-size: 25px; color: black;"></span>Browse
+                        files</span>... and choose them from your computer.</p>
+                    <p>5.When you're done, click <span style="font-size: 25px; color: black;">Send to Support</span>.
+                    </p>
+
+                </div>
+                <div class="contact1">
+                    <h1>Ask questions about subscriptions and billing</h1>
+                    <p style="font-size: 23px;background-color:#FFE496 ;">Admins can manage and update billing
+                        information on behalf of their Organization directly from the<span
+                            style="text-decoration: underline;"> web app</span>, including <span
+                            style="text-decoration: underline;">adding more contributor
+                            seats, managing billing details</span>, and <span
+                            style="text-decoration: underline;">locating invoices</span>.</p>
+
+                    <p>For security purposes, Support can only assist with billing matters if you are an admin <span
+                            style="font-size: 27px;">or</span> can
+                        provide credit card information to verify your identity. If you want to use card information to
+                        verify your identity, you need to provide:</p>
+                    <ui>
+                        <li style="margin-left: 70px;font-size: 20px;">The name on the credit card on file</li>
+                        <li style="margin-left: 70px;font-size: 20px;">The last four digits of the card number</li>
+                        <li style="margin-left: 70px;font-size: 20px;">The card expiration date</li>
+                        <li style="margin-left: 70px;font-size: 20px;">A screenshot of the last charge that Abstract
+                            made to the card</li>
+                    </ui>
+                    <p>If you aren't an admin and can't provide the card information mentioned above,<span
+                            style="text-decoration: underline;"> locate your admin</span>
+                        within the web or desktop application. Have this person contact Support with your questions.</p>
+                    <h1>Make a sales inquiry</h1>
+                    <p>Are you a software reseller? Please<spen style="text-decoration: underline;"> get in touch with
+                            our Sales Team</spen>.</p>
+                    <p>If you're part of an Enterprise plan and want to discuss an upcoming renewal, please contact your
+                        customer success manager directly.</p>
+                </div>
+
             </div>
             <div class="main-right">
-                <h5>Contact support</h5>
-                <a href="">Ask questions about</a>
-                <a href="">subscriptions and billing</a>
-                <a href="">Make a sales inquiry</a>
-            </div>
+                <div class="contact2">
+                    <selact class="select">
+                        <option  style="background-color: blue;color: #ffffff;" value="1">Contact support</option>
+                        <option value="2">Ask questions about subscriptions and billing</option>
+                        <option value="3">Make a sales inquiry</option>
+                </div>
             </div>
     </section>
-    <section>
-        <div class="main-content">
- <div class="content1"> 
-     <p> Unable to sign in? Reach us here.</p>
+  <footer>
+        <div class="foot-left">
+            <div class="foot-item">
+                <h2>Abstract</h2>
+                <ul>
+                    <li ><a href="">Start Trial</a></li>
+                <li> <a href="">Pricing</a></li>
+                <li><a href="">Download</a></li>
+            </ul></div>
+    
+            <div class="foot-item">
+                <h2>Resources</h2>
+                <ul>
+                    <li ><a href="">Blog</a></li>
+                <li> <a href="">Help Center</a></li>
+                <li><a href="">Release Notes</a></li>
+            <li><a href="">Status</a></li> </ul></div>
+                
+            <div class="foot-item">
+                <h2>Community</h2>
+                <ul>
+                    <li ><a href="">Twitter</a></li>
+                <li> <a href="">LinkedIn</a></li>
+                <li><a href="">Facebook</a></li>
+            <li><a href="">Dribblle</a></li> 
+        <li><a href="">Podcast</a></li> </ul></div>
+           
+            <div class="foot-item">
+                <h2>Company</h2>
+                <ul>
+                    <li ><a href="">About Us</a></li>
+                <li> <a href="">Careers</a></li>
+                <li><a href="">Legal</a></li></ul>
+                <h3 style="margin-top: 20px; "> Contacts Us</h3> 
+                <ul><li><a href="">info@goabstract.com</a></li>
+                </ul>
 
+     </div>
+     </div>
+     <div class="foot-right">
+          <h3 style="font-size: 22px;">
+                © Copyright 2025
 
+                Abstract Studio Design, Inc.
 
-</div>
-<div class="content2">
-    <h1>Contact support</h1>
-    <ol>
-        <li>While signed in to Abstract, select the Support icon.<br></li></ol>
-<ul>
-<li>If you're in the Abstract web app, the Support icon<br> is in the lower left corner.<br><li>
-<li>If you're in the Abstract Desktop app, the<br> Supporticon  is in the upper right corner.</li></ul>
-       
+                All rights reserved</h3>
+
+     </div>
+            
+    </footer>
+       <div class="foo-right">
+             <h3 style="font-size: 22px;">
+                © Copyright 2025
+
+                Abstract Studio Design, Inc.
+
+                All rights reserved</h3>
+
+        </div>
     
 
-    </div>
-    </div>
-</div>
-</div>
 
-    </section>
 
 </body>
 
